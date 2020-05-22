@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookers</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <%= render 'layouts/navbar' %>
+
+    <div class="container">
+      <%= render 'layouts/notice' %>
+      <%= yield %>
+    </div>
+  </body>
+
+  <div class="col-xs-4 col-xs-offset-8">
+    <p>© Nagatsuka.inc</p>
+  </div>
+</html>
